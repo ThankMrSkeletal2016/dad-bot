@@ -8,7 +8,7 @@ TOKEN = ''
 
 client = discord.Client()
 
-conversations = ['~We are only togeter because of the kids'
+conversations = ['~We are only togeter because of the kids']
 
 proud = ['Thats My Boy!',
 		'Atta Boy!',
