@@ -1,12 +1,14 @@
-# Work with Python 3.6
+# Dad
 import discord
 import requests
 import json
 import random
 
-TOKEN = 'STILLL NOOO TOOOKKEENNNN HERE'
+TOKEN = ''
 
 client = discord.Client()
+
+conversations = ['~We are only togeter because of the kids'
 
 proud = ['Thats My Boy!',
 		'Atta Boy!',
@@ -38,6 +40,12 @@ async def on_message(message):
 	if message.content.startswith(prefix + 'prouddad'):
 		x = random.randint(0,3)
 		msg = proud[x]
+		await client.send_message(message.channel, msg)
+		
+
+	#Conversation Commands
+	if message.content.startswith(conversations[0]):
+		msg = 'Can we please not have this fight tonight?'
 		await client.send_message(message.channel, msg)
 		
 @client.event
